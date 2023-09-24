@@ -4,6 +4,7 @@ const getCatAPI = async () => {
         'https://api.thecatapi.com/v1/images/search?api_key=live_96mbSquof1IrEzoBi4ssU1BbI71VOawb0Blcy7MALcWQHma5IENwEdCDnfX8m7oh&limit=50',
         {
             method: 'GET',
+            mode: 'cors'
         }
     );
     const catsData = await response.json();
